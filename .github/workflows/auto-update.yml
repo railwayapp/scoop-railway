@@ -1,0 +1,19 @@
+name: Auto updater
+
+on:
+  schedule:
+  - cron: '0 0 * * *'
+  workflow_dispatch:
+name: Excavator
+jobs:
+  excavate:
+    name: Excavate
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Excavate
+      uses: Ash258/Scoop-GithubActions@stable
+      env:
+        GITH_EMAIL: ${{ secrets.EMAIL }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        SKIP_UPDATED: '1'
