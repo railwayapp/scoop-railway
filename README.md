@@ -7,8 +7,12 @@ The official Scoop bucket for installing the Railway CLI. All binaries are signe
 This presumes you have Scoop installed, if you don't, see [this](#install-scoop)
 
 ```ps1
-scoop bucket add cone https://github.com/railwayapp/scoop-railway; scoop install scoop-railway/railway
+scoop bucket add railway https://github.com/railwayapp/scoop-railway; scoop install scoop-railway/railway
 ```
+
+## Updating
+
+Simply type `scoop update railway/railway` to update your installation of the CLI.
 
 ## Install Scoop
 
